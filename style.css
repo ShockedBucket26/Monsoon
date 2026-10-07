@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #293940;
+}
+
+header {
+    padding: 20px 30px;
+    background: #dce6eb;
+    border-bottom: 1px solid #b6c4cc;
+}
+
+h1 {
+    margin: 0 0 15px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: baseline;
+}
+
+a {
+    color: #245570;
+}
+
+.dropdown {
+    position: relative;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.links {
+    position: absolute;
+    background: white;
+    border: 1px solid #bbb;
+    padding: 10px;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.links a {
+    display: block;
+    padding: 6px;
+}
+
+main {
+    padding: 30px;
+    min-height: 400px;
+    max-width: 850px;
+}
+
+section {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 25px 0;
+}
+
+form {
+    max-width: 350px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #aaa;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 20px;
+}
+
+.note {
+    font-size: 13px;
+    color: #666;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding: 15px 30px;
+    color: #666;
+}
