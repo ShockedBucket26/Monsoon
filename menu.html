@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsoon Indian Bistro - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Monsoon Indian Bistro</h1><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="contact.html">Contact</a></nav></header>
+    <main>
+        <h2>Menu</h2>
+        <div class="menu-grid" id="menu"></div>
+    </main>
+    <footer><p>Monsoon Indian Bistro | 11321 W Markham St #6, Little Rock, AR | (501) 379-9116</p></footer>
+    <script>
+        class MenuItem {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            display() {
+                const card = document.createElement("div");
+                card.className = "menu-item";
+                const title = document.createElement("h3");
+                title.textContent = this.name;
+                const price = document.createElement("p");
+                price.textContent = this.price;
+                card.append(title, price);
+                return card;
+            }
+        }
+
+        const menu = document.getElementById("menu");
+        for (let i = 0; i < 12; i++) {
+            const item = new MenuItem("*insert name*", "*insert price*");
+            menu.appendChild(item.display());
+        }
+    </script>
+</body>
+</html>

@@ -50,3 +50,27 @@ footer {
     header { padding: 18px 20px; }
     .map { height: 250px; }
 }
+
+/* Menu page */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.menu-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+.menu-item:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
